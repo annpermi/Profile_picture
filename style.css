@@ -2,18 +2,21 @@ body {
   box-sizing: border-box;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
+  position: relative;
 }
 
 .wrapper {
   max-width: 1200px;
   width: 400px;
-  margin: 30px auto;
   border: 2px solid rgb(232, 232, 232);
   box-shadow: 10px 10px 20px -25px;
   border-radius: 10px;
+  position: fixed; /* to put wrapper in the middle of the page */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .container {
-  position: relative;
   display: flex; /* put text Add Friend in the middle */
   align-items: center;
   justify-content: center;
@@ -51,31 +54,32 @@ body {
 
 /* info */
 .info {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 h2,
 p {
-  padding: 0;
+  padding-left: 20px;
   margin: 0;
 }
 
 .info p {
   color: grey;
+  padding-bottom: 20px;
 }
 
 hr {
   opacity: 0.5;
+  margin: 0;
 }
 
 /* bottom */
-.bottom {
-  height: 50px;
-}
 span,
 i {
   color: grey;
-  margin: 5px 0;
+}
+span {
+  margin: 10px 0;
 }
 
 i {
